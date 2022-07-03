@@ -1,0 +1,102 @@
+1.student collection
+
+CREATE TABLE STUDENTS (
+  NO INTEGER ,
+  NAME TEXT,
+  EMAIL TEXT
+);
+
+
+INSERT INTO STUDENTS  VALUES (1, 'John', 'john@gmail.com');
+INSERT INTO STUDENTS  VALUES (2, 'Dev', 'dev@gmail.com');
+INSERT INTO STUDENTS  VALUES (3, 'Ava ', 'ava@gmail.com');
+INSERT INTO STUDENTS  VALUES (4, 'Joe', 'joe@gmail.com');
+INSERT INTO STUDENTS  VALUES (5, 'Sam', 'sam12@gmail.com');
+INSERT INTO STUDENTS  VALUES (6, 'Tharun', 'tharun@gmail.com');
+INSERT INTO STUDENTS  VALUES (7, 'Vasan', 'vasa@gmail.com');
+INSERT INTO STUDENTS  VALUES (8, 'Surya', 'surya@gmail.com');
+INSERT INTO STUDENTS  VALUES (9, 'Sai', 'sai@gmail.com');
+INSERT INTO STUDENTS  VALUES (10, 'kamal', 'kamal@gmail.com');
+INSERT INTO STUDENTS  VALUES (11, 'Sri', 'sri@gmail.com');
+INSERT INTO STUDENTS  VALUES (12, 'Kavya ', 'kavya@gmail.com');
+
+SELECT * FROM STUDENTS 
+  
+
+2.batch collection
+
+CREATE TABLE BATCH (
+  NO INT,
+  NAME TEXT,
+  BATCH_NO TEXT,
+  BATCH_TYPE TEXT
+);
+
+
+INSERT INTO BATCH VALUES (1, 'John', 'B31', "WeekDay");
+INSERT INTO BATCH VALUES (2, 'Dev', 'B32', 'WeekEnd');
+INSERT INTO BATCH VALUES (3, 'Ava ', 'B31',"WeekDay");
+INSERT INTO BATCH VALUES (4, 'Joe', 'B33','WeekEnd');
+INSERT INTO BATCH VALUES (5, 'Sam', 'B32','WeekEnd');
+INSERT INTO BATCH VALUES (6, 'Tharun', 'B31','WeekDay');
+INSERT INTO BATCH VALUES (7, 'Vasan', 'B32',"WeekDay");
+INSERT INTO BATCH VALUES (8, 'Surya', 'B31','WeekEnd');
+INSERT INTO BATCH VALUES (9, 'Sai', 'B33','WeekEnd');
+INSERT INTO BATCH VALUES (10, 'kamal', 'B31','WeekEnd');
+INSERT INTO BATCH VALUES (11, 'Sri', 'B33','WeekEnd');
+INSERT INTO BATCH VALUES (12, 'Kavya ', 'B32',"WeekDay");
+
+SELECT * FROM BATCH 
+
+3. task collection
+
+CREATE TABLE TASK (
+  id INT,
+  NAME TEXT,
+  TASK_COMPLETED INT
+  
+  -- BATCH TYPE TEXT,
+);
+
+
+INSERT INTO TASK VALUES (1, 'John', 30);
+INSERT INTO TASK VALUES (2, 'Dev', 29);
+INSERT INTO TASK VALUES (3, 'Ava',15 );
+INSERT INTO TASK VALUES (4, 'Joe', 32);
+INSERT INTO TASK VALUES (5, 'Sam', 25);
+INSERT INTO TASK VALUES (6, 'Tharun',20 );
+INSERT INTO TASK VALUES (7, 'Vasan', 10);
+INSERT INTO TASK VALUES (8, 'Surya', 17);
+INSERT INTO TASK VALUES (9, 'Sai',22 );
+INSERT INTO TASK VALUES (10, 'kamal', 31);
+INSERT INTO TASK VALUES (11, 'Sri', 28);
+INSERT INTO TASK VALUES (12, 'Kavya ', 5);
+
+SELECT * FROM TASK 
+
+4.Mentor collection
+
+CREATE TABLE MENTOR (
+  NO INT,
+  MENTOR_NAME TEXT,
+  BATCH_TAKEN TEXT
+  
+  -- BATCH TYPE TEXT,
+);
+
+
+INSERT INTO MENTOR VALUES (1, 'sanjay',"B31-Tamil" );
+INSERT INTO MENTOR VALUES (2, 'saravanan',"B32-ENG");
+INSERT INTO MENTOR VALUES (3, 'tamil', "B32-Tamil");
+INSERT INTO MENTOR  VALUES (4, 'rapon', "B32-Hindi");
+INSERT INTO MENTOR VALUES (5, 'selvam',"B32-ENG");
+INSERT INTO MENTOR VALUES (6, 'keerthi',"B33-Hindi" );
+INSERT INTO MENTOR VALUES (7, 'Vasanth', "B31-Tamil");
+INSERT INTO MENTOR VALUES (8, 'mohan',"B32-Hindi" );
+INSERT INTO MENTOR VALUES (9, 'Sai guru', "B33-ENG");
+INSERT INTO MENTOR VALUES (10, 'kamalan', "B32-ENG");
+INSERT INTO MENTOR VALUES (11, 'Sri ganesh',"B31-Tamil" );
+INSERT INTO MENTOR VALUES (12, 'tharun ', "B31-Hindi" );
+
+SELECT * FROM MENTOR
+
